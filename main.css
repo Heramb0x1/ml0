@@ -94,6 +94,10 @@ body.dark {
     color: #fff;
 }
 
+hr{
+    margin-top: 150px;
+}
+
 .main-head-div {
     display: flex;
     align-items: center;
