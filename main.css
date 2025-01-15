@@ -1,0 +1,352 @@
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    padding-right: 0%;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+
+}
+
+.vt323-regular {
+    font-family: "VT323", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.manrope-unique1 {
+    font-family: "Manrope", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.social-link {
+    margin-right: 20px;
+}
+
+footer {
+
+    font-family: "Manrope", serif;
+    ;
+    width: 100%;
+    margin-top: 150px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 26px;
+    padding-right: 26px;
+    background-color: #333;
+    /* Optional: Add a background for better visibility */
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    transition: color 0.3s;
+}
+
+.footer-links .social-link:hover {
+    color: #fff;
+}
+
+
+body.dark {
+    background-color: #121212;
+    color: #fff;
+}
+
+.main-head-div {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.main-head {
+    font-family: "Manrope", serif;
+    font-size: 30px;
+    padding-left: 62px;
+    letter-spacing: -2px;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+.math-equation {
+    display: block;
+    background-color: aqua;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Times New Roman", serif;
+    width: 100%;
+    margin: 90px 0;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.math-equation p {
+    color: #333;
+    font-size: 30px;
+}
+
+.math-equation.dark {
+    color: black;
+}
+
+
+dfn,
+strong,
+i .dark::view-transition-old(root) {
+    color: crimson;
+}
+
+
+
+
+.overpass-mono-unique3 {
+    font-family: "Overpass Mono", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.jetbrains-mono-unique2 {
+    font-family: "JetBrains Mono", serif;
+    font-optical-sizing: auto;
+}
+
+.header {
+    display: flex;
+}
+
+.skater-gif {
+    width: auto;
+    height: 74px;
+    margin-left: 20px;
+    padding-top: 0px;
+}
+
+.container {
+    padding: 60px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ref {
+    text-decoration: none;
+    color: rgb(174, 255, 160);
+}
+
+.main-content {
+    font-family: "Overpass Mono", serif;
+    font-size: 24px;
+    padding-top: 60px;
+}
+
+.s-categories {
+    padding-top: 60px;
+}
+
+.sub-head {
+    font-family: "Manrope", serif;
+    padding-left: 62px;
+    position: relative;
+}
+
+.sub-head::before {
+    content: "";
+    position: absolute;
+    left: 7%;
+    bottom: 8px;
+    width: 150px;
+    height: 14px;
+    transform: skew(-12deg) translateX(12%);
+    background: rgba(238, 111, 87, 0.5);
+    z-index: -1;
+}
+
+
+
+
+.trademark {
+    font-family: "VT323", serif;
+    font-size: 42px;
+    padding-left: 30px;
+}
+
+.navbar1 {
+    position: fixed;
+    display: flex;
+    font-size: 40px;
+    font-family: "VT323", serif;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px dotted rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    top: 0;
+    transition: background-color 0.3s, border-bottom-color 0.3s, transform 0.3s ease-in-out;
+}
+
+::view-transition-group(root) {
+    animation-duration: 0.7s;
+    animation-timing-function: var(--expo-out);
+}
+
+::view-transition-new(root) {
+    animation-name: reveal-light;
+}
+
+::view-transition-old(root),
+.dark::view-transition-old(root) {
+    animation: none;
+    z-index: -1;
+}
+
+.dark::view-transition-new(root) {
+    animation-name: reveal-dark;
+}
+
+@keyframes reveal-dark {
+    from {
+        clip-path: polygon(50% -71%, -50% 71%, -50% 71%, 50% -71%);
+    }
+
+    to {
+        clip-path: polygon(50% -71%, -50% 71%, 50% 171%, 171% 50%);
+    }
+}
+
+@keyframes reveal-light {
+    from {
+        clip-path: polygon(171% 50%, 50% 171%, 50% 171%, 171% 50%);
+    }
+
+    to {
+        clip-path: polygon(171% 50%, 50% 171%, -50% 71%, 50% -71%);
+    }
+}
+
+
+body.dark .navbar1 {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.tags {
+    display: flex;
+    font-size: auto;
+
+}
+
+.nav-link {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: crimson;
+}
+
+body.dark .nav-link {
+    color: white;
+}
+
+body.dark .nav-link:hover {
+    color: crimson;
+}
+
+.theme-toggle-button {
+    margin-right: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.theme-toggle-button:hover {
+    transform: scale(1.1);
+}
+
+.icon-sun,
+.icon-moon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+
+body.dark .icon-moon {
+    stroke: white;
+}
+
+.icon-moon.hidden {
+    opacity: 0;
+    transform: rotate(-90deg);
+}
+
+.icon-sun.hidden {
+    opacity: 0;
+    transform: rotate(-90deg);
+}
+
+.hidden-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

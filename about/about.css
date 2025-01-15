@@ -1,0 +1,27 @@
+body{
+    background-color: #f4f4f4;
+}
+
+.main-head-div{
+    display: flex;
+    align-items: center;
+}
+.main-head{
+    font-family: Georgia, serif;
+    color: #383c3b;
+    font-size: 28px;
+}
+
+.skater-gif{
+    width:auto;
+    height:28px;
+    margin-left:10px;
+}
+.main-content{
+    margin-top: 120px;
+    padding-left: 122px;
+    padding-right: 122px;
+}
+.navbar1{
+    
+}
