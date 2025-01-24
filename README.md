@@ -24,7 +24,7 @@ git clone https://github.com/yourusername/ml-notebook.git
 ```
 ---
 ## *Live Demo*
-[https://ml0.betterworkai.org](https://ml0.betterworkai.org)
+[ml0.betterworkai.org](https://ml0.betterworkai.org)
 
 ---
 ### Purpose of Build
