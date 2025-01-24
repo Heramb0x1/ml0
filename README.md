@@ -1,9 +1,9 @@
 
-A personal repository for machine learning experiments and study notes.
+A personal website for machine learning guides, experiments, visualizations and study notes. 
 
 ## Overview
 
-This repository serves as a collection of:
+This repository would serve as a collection of (this update soon to be patched!):
 - Machine learning experiments
 - Code snippets
 - Study notes
@@ -14,7 +14,7 @@ This repository serves as a collection of:
 ```
 ml-notebook/
 ├── README.md        # This file
-└── ...              # Additional directories and files to be added
+└── ...              # Additional directories
 ```
 
 ## Getting Started
