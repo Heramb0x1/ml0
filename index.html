@@ -9,18 +9,13 @@
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="c84c354a-112f-4a0c-8d25-eaa14dbd4311"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Manrope:wght@700&family=Overpass+Mono:wght@300..700&family=VT323&display=swap"
         rel="stylesheet">
-    <script data-goatcounter="https://ml0.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-    
 </head>
 
 <body>
-<div id="navbar"></div>
-
+    <div id="navbar"></div>
     <div class="container">
         <header class="main-head">
             <h1 class="main-head-div">A Brief Overview of Machine Learning Models</h1>
@@ -78,43 +73,36 @@
                         Each tree in the forest makes a prediction, and the final output is the majority prediction from
                         all trees.</p>
                 </div>
+
+
+                <div style="margin-top: 60px ;">
+                    <div style="display: flex;">
+                    <h4>I hope, this one builds up your context over viewTransitions API; 
+                        keep tinkering, and keep hacking!
+                    </h4>
+                    </div>
+                    <div>
+                        <a href="https://github.com/Heramb0x1" target="_blank" class="socials">GitHub</a>
+                        <a href="https://www.linkedin.com/in/heramb-salunkhe/" target="_blank" class="socials">LinkedIn</a>
+                        <a href="https://twitter.com/intent/follow?screen_name=heramb0x1" target="_blank" class="socials">X(Twitter)</a>
+                    </div>
+                </div>
             </section>
-                <hr>
-    <p class="ending-note">
-        <ul><span style="color: crimson; padding-top: 70px;"> Quick Note from Me</span></ul>
-
-        In this blog, we’ve explored the ideas and math behind key machine learning topics step by step, starting from the very basics.
-
-        The aim was to demystify what often feels like a complex "black box" by breaking it down into simple, logical steps. 
-        <p style="padding-top: 30px;">
-        From foundational ML concepts and essential mathematics to optimization, linear regression, and gradient descent, I’ve aimed to make these topics approachable and engaging.
-        </p>
-
-        Thank you for being part of this journey! If you have questions, suggestions, or want to share your thoughts, don’t hesitate to reach out. Let’s keep learning and creating together!
-        <p style="padding-top: 30px;">
-
-        I’m excited to share my next post soon – all about GPTs!
-        <br>
-        ~ Also, hopefully with great visualizations! ;p
-        </p>
-        Take care :)
-    </p>
         </div>
     </div>
 <div id="footer"></div>
 
     <script>
-        fetch ('components/navbar.html')
-            .then(Response => Response.text())
-            .then(data => {
-                document.getElementById('navbar').innerHTML = data;
-            });
-        fetch ('components/footer.html')
-            .then(Response => Response.text())
-            .then(data => {
-                document.getElementById('footer').innerHTML = data;
-            });
-            
+        
+        fetch('components/navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar').innerHTML = data)
+            .catch(error => console.error('Error loading navbar:', error));
+
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data)
+            .catch(error => console.error('Error loading footer:', error));
         function toggleTheme() {
             const body = document.body;
             const sunIcon = document.querySelector('.icon-sun');
